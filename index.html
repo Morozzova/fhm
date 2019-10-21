@@ -21,42 +21,18 @@
 <body>
     <header class="container header">
         <div class="header_top row justify-content-between align-items-center no-gutters">
-            <div class="header_logo col-lg-auto order-lg-1 col-sm-6 order-sm-1 col-12 order-2">
+            <div class="header_logo col-lg-auto order-lg-1 col-sm-6 order-sm-1 col-auto order-2">
                 <a href="index.html">
                     <img src="img/FAS-Logo.png" width="150" height="71" alt="FAS логотип">
                 </a>
             </div>
-            <div class="header_slogan col-lg-auto order-lg-2 col-sm-6 order-sm-3 col-12 order-3">Продажа немецких
+            <div class="header_slogan col-lg-auto order-lg-2 col-sm-6 order-sm-3 col-auto order-3">Продажа немецких
                 <br>испарительных установок</div>
-            <div class="header_phone col-lg-auto order-lg-3 col-sm-6 order-sm-2 col-12 order-1 text-right">8 800 755-13-45</div>
-            <div class="header_callback col-lg-auto order-lg-4 col-sm-6 order-sm-4 col-12 order-4 text-right">
+            <div class="header_phone col-lg-auto order-lg-3 col-sm-6 order-sm-2 col-xs-12 order-1 text-right">8 800 755-13-45</div>
+            <div class="header_callback col-lg-auto order-lg-4 col-sm-6 order-sm-4 col-xs-12 order-4 text-right">
                 <button type="button" class="callback" data-toggle="modal" data-target="#callback">Заказать звонок</button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title text-center" id="exampleModalCenterTitle">Наш менеджер свяжется с вами в ближайшее время</h5>
-                            </div>
-                            <div class="modal-body row justify-content-center">
 
-                                <input type="text" name="name" id="name" placeholder="Ваше имя" class="name col-9">
-                                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="phone  col-9">
-
-                            </div>
-                            <div class="modal-footer row justify-content-center">
-
-                                <input type="submit" value="Заказать звонок" id="get-callback" name="get-callback" class="get-callback col-9">
-                                <div class="custom-control custom-switch col-11">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                                    <label class="custom-control-label" for="customSwitch1">Заполняя форму Вы соглашаетесь с <a class="privacy_link" href="#" target="_blank">политикой конфиденциальности</a>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -69,7 +45,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="main-menu navbar-nav mr-auto">
                     <li class="main-menu_item nav-item">
-                        <a class="main-menu_link nav-link" href="#price">Оборудование и цены</a>
+                        <a class="main-menu_link nav-link" href="#modifications">Оборудование и цены</a>
                     </li>
                     <li class="main-menu_item nav-item">
                         <a class="main-menu_link nav-link" href="#scheme">Принцип работы</a>
@@ -89,19 +65,477 @@
         </nav>
     </header>
     <main>
-        <section class="banner"></section>
-        <section class="scheme" id="scheme"></section>
-        <section class="price" id="price"></section>
-        <section class="form" id="form"></section>
-        <section class="trust"></section>
-        <section class="gallery" id="gallery"></section>
-        <section class="about" id="about"></section>
+        <section class="banner">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="banner_title col-lg-7 col-12">Испарительные установки FAS повышенной надёжности со сроком службы 45 лет</div>
+                </div>
 
+                <ul class="banner_features row no-gutters">
+                    <li class="col-lg-3 col-sm-6 col-auto">
+                        <div class="production">производство
+                            <br><span class="banner_germany">Германия</span>
+                        </div>
+                    </li>
+                    <li class="col-lg-3 col-sm-6 col-auto">
+                        <div class="guarantee">гарантия
+                            <br><span class="banner_five">От 5 лет</span>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="banner_consult" data-toggle="modal" data-target="#get_consult">
+                    Получить консультацию
+                </button>
+            </div>
+        </section>
+
+
+        <section class="scheme container" id="scheme">
+            <div class="row no-gutters">
+                <p class="scheme_pseudotitle">Испарительные установки предназначены для обеспечения бесперебойной работы газопотребляющего оборудования</p>
+                <p class="scheme_description">Процесс искусственной регазификации осуществляется на высококачественном современном оборудовании FAS</p>
+                <div class="scheme_wrapper row no-gutters">
+                    <div class="scheme_left-column col-lg-3 order-lg-1 order-2">
+                        <ul class="scheme_list">
+                            <li class="scheme_item"><span class="scheme_number">1.</span> Вход жидкой фазы в испарительную установку</li>
+                            <li class="scheme_item"><span class="scheme_number">2.</span> Преобразование жидкой фазы СУГ (регазификация)</li>
+                            <li class="scheme_item"><span class="scheme_number">3.</span> Блок автоматически поддерживает параметры работы испарителя, контролирует параметры безопасности и выходную мощность оборудования</li>
+                            <li class="scheme_item"><span class="scheme_number">4.</span> Предохранительный клапан не допускает увеличение давления в испарительной установке свыше рабочих параметров</li>
+                            <li class="scheme_item"><span class="scheme_number">5.</span> Отсекатель жидкой фазы удаляет возможные примеси из газа, а так же защищает систему от попадания тяжёлых фракций и меркаптановых соединений СУГ в газоиспользующее оборудование</li>
+                            <li class="scheme_item"><span class="scheme_number">6.</span> Регулятор среднего давления снижает величину избыточного давления паровой фазы СУГ до рабочих параметров</li>
+                        </ul>
+                    </div>
+                    <div class="scheme_middle-column col-lg-6 order-lg-2 order-1 text-center">
+                        <img class="scheme_image" src="img/scheme.jpg" width="473" height="412" alt="Схема испарительной установки">
+                    </div>
+                    <div class="scheme_right-column col-lg-3 order-lg-3 order-3">
+                        <ul class="scheme_list">
+                            <li class="scheme_item"><span class="scheme_number">7.</span> Регулятор низкого давления снижает величину избыточного давления до параметров, обеспечивающих стабильную работу газоиспользующего оборудования. Дополнительнос прекращает подачу газа при достижении величины давления свыше установленных параметров. Встроенный фильтр тонкой очистки не допускает попадание механических примесей в систему газоснабжения объекта.</li>
+                            <li class="scheme_item"><span class="scheme_number">8.</span> Выход паровой фазы на газоиспользующее оборудование</li>
+                            <li class="scheme_item"><span class="scheme_number">9.</span> Манометры обеспечивают контроль за рабочими параметрами установки</li>
+                            <li class="scheme_item"><span class="scheme_number">10.</span> Электромагнитные клапаны поддерживают стабильность процесса регазификации</li>
+                            <li class="scheme_item"><span class="scheme_number">11.</span> Фильтрующий элемент предназначен для удаления из газа различных примесей</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="button" class="scheme_consult" data-toggle="modal" data-target="#get_consult">
+                        Получить консультацию
+                    </button>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="modifications" id="modifications">
+            <div class="container">
+                <h2 class="modifications_title text-center">Модификации и цены</h2>
+                <ul class="modifications_list">
+                    <li class="modifications_item evaporators row no-gutters">
+
+                        <div class="modifications_inner col-12 col-lg-6 order-2 order-lg-1">
+                            <h3 class="modifications_item_title order-1">Испарители FAS</h3>
+                            <ul class="features">
+                                <li class="features_item">Производительность до 40 кг/ч,</li>
+                                <li class="features_item">Компактность</li>
+                                <li class="features_item">Электропитание – 1-фазное, 230 В/50 Гц.</li>
+                            </ul>
+                            <p class="modifications_description">
+                                Испарители FAS конструируются и производятся на заводе компании Flussiggas Anlagen GmbH (FAS), расположенном в городе Зальцгиттер (Salzgitter, Bundesland Niedersachsen).
+                            </p>
+                        </div>
+                        <div class="modification_photo-wrapper text-center col-12 col-lg-6 order-1 order-lg-2">
+                            <img class="modifications_photo" src="img/evaporator.png" width="343" height="246" alt="Испаритель">
+                        </div>
+                        <div class="collapse modifications_more order-3" id="collapseExample1">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatibus ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatib class="modifications_read-more"us ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatib class="modifications_read-more"us ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+
+                        </div>
+                        <div class="modifications_buttons col-lg-6 row order-4">
+
+
+                            <button class="modifications_read-full" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                Читать полностью
+                            </button>
+                            <button type="button" class="modifications_get-price" data-toggle="modal" data-target="#get_price">
+                                Узнать цену
+                            </button>
+
+                        </div>
+
+
+                    </li>
+
+                    <li class="modifications_item electric row no-gutters">
+
+                        <div class="modifications_inner col-12 col-lg-6 order-2 order-lg-1">
+                            <h3 class="modifications_item_title order-1">Электрические испарительные установки</h3>
+                            <ul class="features">
+                                <li class="features_item">бесперебойная работа в тяжелых климатических условиях;</li>
+                                <li class="features_item">стабильная подтвержденная мощность испарительных установок в течение всего срока службы;</li>
+                                <li class="features_item">большой срок эксплуатации при низком уровне операционных расходов;</li>
+                            </ul>
+                            <p class="modifications_description">
+                                Принцип действия испарителей серии FAS 2000 – нагрев жидкой фазы СУГ тепловыми элементами (трубчатыми электронагревателями, ТЭН), обеспечивающий принудительное парообразование.
+                            </p>
+                        </div>
+                        <div class="modification_photo-wrapper text-center col-12 col-lg-6 order-1 order-lg-2">
+                            <img class="modifications_photo" src="img/electric.jpg" width="373" height="304" alt="Электрическая испарительная установка">
+                        </div>
+                        <div class="collapse modifications_more order-3" id="collapseExample2">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatibus ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatib class="modifications_read-more"us ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatib class="modifications_read-more"us ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+
+                        </div>
+                        <div class="modifications_buttons col-lg-6 row order-4">
+
+
+                            <button class="modifications_read-full" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                Читать полностью
+                            </button>
+                            <button type="button" class="modifications_get-price" data-toggle="modal" data-target="#get_price">
+                                Узнать цену
+                            </button>
+
+                        </div>
+
+
+                    </li>
+
+                    <li class="modifications_item liquid row no-gutters">
+
+                        <div class="modifications_inner col-12 col-lg-6 order-2 order-lg-1">
+                            <h3 class="modifications_item_title order-1">Жидкостные испарительные установки</h3>
+                            <ul class="features">
+                                <li class="features_item">компактная конструкция</li>
+                                <li class="features_item">малый вес</li>
+                                <li class="features_item">высокая удельная тепловая мощность, благодаря специальному профилированию пластин</li>
+                            </ul>
+                            <p class="modifications_description">
+                                Жидкостный (водяной) испаритель FAS 3000 предназначен для перевода жидкой фазы СУГ в паровую. Процесс передачи тепла от теплоносителя (антифриз, горячая вода) к пропан-бутану
+                            </p>
+                        </div>
+                        <div class="modification_photo-wrapper text-center col-12 col-lg-6 order-1 order-lg-2">
+                            <img class="modifications_photo" src="img/liquid.jpg" width="416" height="248" alt="Жидкостная испарительная установка">
+                        </div>
+                        <div class="collapse modifications_more order-3" id="collapseExample3">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatibus ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatib class="modifications_read-more"us ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde id debitis veniam voluptatib class="modifications_read-more"us ducimus nihil sunt architecto iusto optio dolorem deleniti natus, dolores officia ipsam earum, assumenda mollitia sequi quo doloremque. Repellat rem a minus neque atque excepturi voluptas, assumenda nihil et, id at ut illum fugit quia reiciendis. Cum, doloribus quia eligendi ut fuga! Quisquam corporis, quidem iure recusandae vitae, assumenda consequuntur at dignissimos, nihil deserunt quia soluta tempore.</p>
+                            <p>Non rerum aut accusamus voluptatibus pariatur, numquam? Consectetur corrupti odio quia necessitatibus, impedit quasi quo inventore a harum expedita quas est nesciunt nostrum ducimus ipsum, beatae pariatur eos ut, nemo voluptatem saepe quaerat cum? Ad, at, impedit. Dolore excepturi eius inventore facilis asperiores eveniet sapiente ratione deserunt doloribus debitis quod eos pariatur reprehenderit quidem doloremque quisquam molestias, a cupiditate alias quo iste quam laboriosam. In quae, ea ducimus est temporibus.</p>
+
+                        </div>
+                        <div class="modifications_buttons col-lg-6 row order-4">
+
+
+                            <button class="modifications_read-full" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                Читать полностью
+                            </button>
+                            <button type="button" class="modifications_get-price" data-toggle="modal" data-target="#get_price">
+                                Узнать цену
+                            </button>
+
+                        </div>
+
+
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="form" id="form">
+            <form class="container" action="" method="get">
+                <legend class="form_title">Запросить стоимость ИУ</legend>
+                <div class="form_top row no-gutters justify-content-between align-center">
+                    <div class="power_div col-lg-4">
+                        <label for="power">требуемая мощность, кВт
+
+                        </label>
+                        <input type="text" name="power" id="power" class="power">
+                    </div>
+                    <div class="productivity_div col-lg-4">
+                        <label for="productivity">производительность, кг/час
+
+                        </label>
+                        <input type="text" name="productivity" id="productivity" class="productivity">
+                    </div>
+                    <div class="pressure_div col-lg-4">
+                        <label for="pressure">рабочее давление, МПа
+
+                        </label>
+                        <input type="text" name="pressure" id="pressure" class="pressure">
+                    </div>
+                </div>
+                <div class="form_middle row no-gutters justify-content-between align-center">
+                    <div class="name-wrapper col-md-4">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" class="name">
+                        <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="phone">
+                    </div>
+                    <textarea placeholder="Комментарий" class="comment col-md-8 mx-auto"></textarea>
+                </div>
+                <div class="form_bottom row no-gutters justify-content-between align-center">
+                    <div class="col-md-4">
+                        <input type="submit" value="Получить расчёт" id="submit" name="submit" class="form-submit submit">
+                    </div>
+                    <div class="form-custom-control custom-control custom-switch col-md-8">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+                        <label class="custom-control-label privacy" for="customSwitch4">Заполняя форму Вы соглашаетесь с <a class="privacy_link" href="#" target="_blank">политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+        <section class="trust container">
+            <p class="trust_pseudotitle">Посмотрите, почему нам доверяют крупнейшие производства России</p>
+            <ul class="trust_list row justify-content-between no-gutters">
+                <li class="trust_item col-lg-3 col-sm-5"><span class="trust_number">5</span> лет гарантии мы предоставляем на само оборудование и его монтаж потому что уверены в качестве продукции и ценим своих клиентов</li>
+                <li class="trust_item col-lg-3 col-sm-5 offset-lg-1"><span class="trust_number">45</span> лет - средний срок службы оборудования, которое обеспечивает высокое немецкое качество и подход к производству</li>
+                <li class="trust_item col-lg-3  col-sm-5 offset-lg-1"><span class="trust_number">20</span> лет успешной работы в России. За это время мы выполнили 38 проектов по организации автономной газификации промышленных предприятий</li>
+                <li class="trust_item col-lg-3 col-sm-5"><span class="trust_number">133</span> официальных представительств и технических бюрокомпании FAS по всему миру</li>
+                <li class="trust_item col-lg-3 col-sm-5 offset-lg-1"><span class="trust_number">7</span> дней в неделю мы готовы быть на связи с Вами и оказать поддержку даже после завершения проекта</li>
+                <li class="trust_item col-lg-3 col-sm-5 offset-lg-1"><span class="trust_number">365</span> дней в году Вы можете быть спокойны,наше оборудование работает бес сбоев и мы не раз это доказали</li>
+            </ul>
+
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="gallery_title">Галерея работ</h2>
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators gallery-indicators justify-content-end">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner gallery-inner">
+                            <div class="carousel-item active gallery_item">
+                                <img src="img/object1.jpg" class="d-block" width="800" height="455" alt="Object-1">
+                                <div class="carousel-caption d-block gallery_description">
+                                    <h3 class="gallery_item_title">Название объекта</h3>
+                                    <p class="gallery_item_description">Система автономного газоснабжения водозаборных и водоотчесных сооружений</p>
+                                    <p class="gallery_item_description">Мощность газоуспользующего оборудования 750 кВт</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery_item">
+                                <img src="img/object2.jpg" class="d-block" width="800" height="455" alt="Object-2">
+                                <div class="carousel-caption d-block gallery_description">
+                                    <h3 class="gallery_item_title">Название объекта</h3>
+                                    <p class="gallery_item_description">Система автономного газоснабжения водозаборных и водоотчесных сооружений</p>
+                                    <p class="gallery_item_description">Мощность газоуспользующего оборудования 750 кВт</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery_item">
+                                <img src="img/object3.jpg" class="d-block" width="800" height="455" alt="Object-3">
+                                <div class="carousel-caption d-block gallery_description">
+                                    <h3 class="gallery_item_title">Название объекта</h3>
+                                    <p class="gallery_item_description">Система автономного газоснабжения водозаборных и водоотчесных сооружений</p>
+                                    <p class="gallery_item_description">Мощность газоуспользующего оборудования 750 кВт</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery_item">
+                                <img src="img/object4.jpg" class="d-block" width="800" height="455" alt="Object-4">
+                                <div class="carousel-caption d-block gallery_description">
+                                    <h3 class="gallery_item_title">Название объекта</h3>
+                                    <p class="gallery_item_description">Система автономного газоснабжения водозаборных и водоотчесных сооружений</p>
+                                    <p class="gallery_item_description">Мощность газоуспользующего оборудования 750 кВт</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery_item">
+                                <img src="img/object5.jpg" class="d-block" width="800" height="455" alt="Object-5">
+                                <div class="carousel-caption d-block gallery_description">
+                                    <h3 class="gallery_item_title">Название объекта</h3>
+                                    <p class="gallery_item_description">Система автономного газоснабжения водозаборных и водоотчесных сооружений</p>
+                                    <p class="gallery_item_description">Мощность газоуспользующего оборудования 750 кВт</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev gallery_prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon gallery_prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next gallery_next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon  gallery_next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about container d-flex justify-content-center" id="about">
+            <img class="about-germany" src="img/map.png" width="592" height="801" alt="Карта Германии">
+            <div class="about_description">
+                <p class="about_p">Компания FAS, Flüssiggas-Anlagen GmbH, Зальцгиттер, Германия, была основана в 1975 году как коммерческое предприятие по производству оборудования для сжиженного нефтяного газа (пропан / бутан). В конце семидесятых идея безопасности получила все большее признание для клиентов и пользователей. В соответствии с правовыми нормами и правилами FAS расширила разработку техники безопасности и включила большое количество дополнительных клапанов, фитингов и оборудования в программу поставки, чтобы соответствовать повышенным требованиям в области техники безопасности производителей, поставщиков и дистрибьюторов газа.</p>
+
+                <p class="about_p">За эти годы ФАС разработал и сконструировал новый продукт для рыночных ниш, чтобы соответствовать растущим желаниям и требованиям клиентов. По этой причине также необходимо было несколько раз менять и расширять производственную площадь в Зальцгиттер, чтобы в новом месте на Зальцгиттер / Пайнер-штрассе 217 была предоставлена и реализована возможность приблизиться к реальной рыночной ситуации.</p>
+
+                <p class="about_p">ФАС обладает современными и крупными производственными мощностями с сервисной мастерской и способна производить все инновационные FAS-продукты с максимально возможным качеством и надежным способом при соблюдении сроков поставки.</p>
+
+                <p class="about_p">Продукты, разработанные FAS, производятся на большинстве современных машин высококвалифицированными и эффективными специалистами и имеют очень обширную систему обеспечения качества.</p>
+
+                <p class="about_p">Благодаря дальновидной и успешной политике компании FAS целенаправленно развилась в одного из самых конкурентоспособных и эффективных поставщиков фитингов и оборудования для сжиженного нефтяного газа для автоцистерн и стационарных установок в Европе. Имея более 10.000 различных товаров на складе, FAS обладает одним из самых широких ассортиментов этой отрасли во всем мире.</p>
+
+                <p class="about_p">Мы постоянно стремимся развивать наши продукты и поддерживать стандарты высокого качества, чтобы в будущем мы могли достичь конкурентного преимущества вместе с нашими клиентами.</p>
+            </div>
+
+        </section>
+        <section class="modal_section">
+
+            <!-- Modal callback-->
+            <div class="modal fade show" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="exampleModalCenterTitle">Наш менеджер свяжется с вами в ближайшее время</h5>
+                        </div>
+                        <div class="modal-body row justify-content-center">
+
+                            <input type="text" name="name" id="name" placeholder="Ваше имя" class="name col-9">
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="phone  col-9">
+
+                        </div>
+                        <div class="modal-footer row justify-content-center">
+
+                            <input type="submit" value="Заказать звонок" id="get-callback" name="get-callback" class="get-callback col-9">
+                            <div class="custom-control custom-switch col-11">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                <label class="custom-control-label" for="customSwitch1">Заполняя форму Вы соглашаетесь с <a class="privacy_link" href="#" target="_blank">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal consult-->
+            <div class="modal fade" id="get_consult" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="exampleModalCenterTitle">Наш менеджер свяжется с вами в ближайшее время</h5>
+                        </div>
+                        <div class="modal-body row justify-content-center">
+
+                            <input type="text" name="name" id="name" placeholder="Ваше имя" class="name col-9">
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="phone  col-9">
+
+                        </div>
+                        <div class="modal-footer row justify-content-center">
+
+                            <input type="submit" value="Получить консультацию" id="get-consult" name="get-callback" class="get-callback col-9">
+                            <div class="custom-control custom-switch col-11">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+                                <label class="custom-control-label" for="customSwitch2">Заполняя форму Вы соглашаетесь с <a class="privacy_link" href="#" target="_blank">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal get price-->
+            <div class="modal fade show" id="get_price" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="exampleModalCenterTitle">Оставьте нам свои контакты и скачайте прайс лист</h5>
+                        </div>
+                        <div class="modal-body row justify-content-center">
+
+                            <input type="text" name="name" id="name" placeholder="Ваше имя" class="name col-9">
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="phone  col-9">
+
+                        </div>
+                        <div class="modal-footer row justify-content-center">
+
+                            <input type="submit" value="Загрузить прайс-лист" id="get-price" name="get-callback" class="get-callback col-9">
+                            <div class="custom-control custom-switch col-11">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                <label class="custom-control-label" for="customSwitch3">Заполняя форму Вы соглашаетесь с <a class="privacy_link" href="#" target="_blank">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
 
     <footer class="footer" id="footer">
+        <div class="footer_top">
+            <div class="contacts-germany">
+                <div class="logo-germany_wrapper">
+                    <img class="logo-germany_left" src="img/logo-germany.png" width="53" height="64" alt="Логотип Германия">
+                    <div class="footer_germany_separator"></div>
+                    <img class="logo-germany_right" src="img/footer-logo-FAS.png" width="105" height="50" alt="Логотип FAS">
+                </div>
+                <h3 class="germany_title">Контакты производителя</h3>
+                <p class="germany_country">
+                    FAS-GERMANY, Германия, Saltzgitter
+                </p>
+                <p class="germany_phones">
+                    +49(5341)86-9276, +49(5341)86-9711
+                </p>
+                <p class="germany_mail">
+                    info@fas.de
+                </p>
+            </div>
+            <div class="contacts-russia">
+                <div class="logo-russia_wrapper">
+                    <img class="logo-russia_left" src="img/logo-nn.png" width="71" height="73" alt="Логотип Нижегородская область">
+                    <div class="footer_russia_separator"></div>
+                    <img class="logo-russia_right" src="img/logo-fhm.png" width="100" height="53" alt="Логотип Фасхиммаш">
+                </div>
+                <h3 class="russia_title">Представительство в России</h3>
+                <p class="russia_country">
+                    607655, Нижегородская область, г. Кстово, ул. Ломоносова, д. 38.
+                </p>
+                <p class="russia_phones">
+                    +7 800 775-12-49
+                    <br>+7 (495) 761-55-49
+                    <br>+7 (495) 76-76-495
+                </p>
+                <p class="russia_mail">
+                    info@fas-him.ru, sale@fas-him.ru
+                </p>
+            </div>
+
+        </div>
+        <div class="footer_bottom">
+            <ul class="footer-menu">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#modifications">Оборудование и цены</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#scheme">Принцип работы</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#about">О компании</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#gallery">Галерея работ</a>
+                </li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+            <a href="https://malevich1.ru" target="_blank">
+                <img class="copyright" src="img/copyright.png" width="106" height="24" alt="Логотип агентства интернет-маркетинга Малевич">
+            </a>
+        </div>
     </footer>
 
 
