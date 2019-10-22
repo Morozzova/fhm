@@ -1076,9 +1076,13 @@ body {
     }
     .contacts-germany {
         width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .contacts-russia {
         width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .contacts-germany-inner {
         margin-right: auto;
