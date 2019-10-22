@@ -589,13 +589,16 @@ body {
     line-height: 21px;
     font-weight: 500;
 }
-.logo-germany_wrapper {
-    display: flex;
-}
 .contacts-germany {
+    width: 50%;
     background-color: #3f3c3d;
     color: #ffffff;
     padding-top: 53px;
+}
+.contacts-germany-inner {
+    width: 585px;
+    margin-right: 0;
+    margin-left: auto;
 }
 .footer_germany_separator {
     width: 1px;
@@ -626,13 +629,17 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
-.logo-russia_wrapper {
-    display: flex;
-}
 .contacts-russia {
+    width: 50%;
     background-color: #efefef;
     color: #3f3c3d;
     padding-top: 45px;
+    padding-bottom: 60px;
+}
+.contacts-russia-inner {
+    width: 585px;
+    padding-left: 100px;
+    box-sizing: border-box;
 }
 .footer_russia_separator {
     background-color: #000000;
@@ -663,9 +670,16 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+.footer_bottom {
+    margin-top: 37px;
+    margin-bottom: 42px;
+}
 .footer-menu {
     list-style: none;
     padding: 0;
+}
+.footer-menu__item {
+    padding-right: 30px;
 }
 .footer-menu__link {
     font-family: "Circe";
@@ -754,12 +768,13 @@ body {
     .gallery_title {
         font-size: 30px;
     }
+    .gallery-inner {
+        width: 800px;
+        margin: 0 auto;
+    }
     .gallery_item_title {
         font-size: 20px;
         line-height: 30px;
-    }
-    .gallery_item img {
-        margin: 0 auto;
     }
     .gallery_description {
         position: static;
@@ -793,6 +808,12 @@ body {
     }
     .about-germany {
         float: left;
+    }
+    .contacts-germany-inner {
+        width: 465px;
+    }
+    .contacts-russia-inner {
+        width: 465px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -926,6 +947,9 @@ body {
     .submit {
         width: 210px;
     }
+    .gallery-inner {
+        width: 100%;
+    }
     .gallery_item img {
         width: 100% !important;
         height: auto !important;
@@ -953,6 +977,21 @@ body {
     }
     .about_description {
         display: block;
+    }
+    .contacts-germany-inner {
+        width: 345px;
+    }
+    .contacts-russia {
+        padding-bottom: 20px;
+    }
+    .contacts-russia-inner {
+        width: 345px;
+    }
+	.footer_bottom {
+		justify-content: flex-end !important;
+	}
+    .footer-menu {
+        display: none;
     }
 }
 @media screen and (max-width: 767px) {
@@ -1030,6 +1069,28 @@ body {
     }
     .about-germany {
         width: 100%;
+    }
+    .footer_top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts-germany {
+        width: 100%;
+    }
+    .contacts-russia {
+        width: 100%;
+    }
+    .contacts-germany-inner {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .contacts-russia {
+        padding-bottom: 20px;
+    }
+    .contacts-russia-inner {
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 @media screen and (max-width: 575px) {
@@ -1141,15 +1202,8 @@ body {
     .pressure_div {
         width: 300px;
     }
-}
-@media screen and (max-width: 349px) {
-    .gallery-indicators {
-        display: none;
-    }
-    .gallery_prev {
-        top: -35px;
-    }
-    .gallery_next {
-        top: -35px;
+    .contacts-russia-inner,
+    .contacts-germany-inner {
+        width: 300px;
     }
 }
