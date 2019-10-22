@@ -987,9 +987,9 @@ body {
     .contacts-russia-inner {
         width: 345px;
     }
-	.footer_bottom {
-		justify-content: flex-end !important;
-	}
+    .footer_bottom {
+        justify-content: flex-end !important;
+    }
     .footer-menu {
         display: none;
     }
