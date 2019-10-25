@@ -264,11 +264,6 @@ body {
     font-weight: bold;
     color: #eb0000;
 }
-/*.scheme_middle-column {
-    padding-top: 110px;
-
-}*/
-
 .scheme_middle-column {
     position: relative;
     background-image: url("img/interactive/scheme.jpg");
@@ -322,8 +317,7 @@ body {
 }
 .scheme-dark,
 .scheme_item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 .scheme_consult {
     width: 312px;
