@@ -15,6 +15,9 @@ body {
         max-width: 1200px;
     }
 }
+.relative {
+    position: relative;
+}
 .header {
     box-sizing: border-box;
     position: absolute;
